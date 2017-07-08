@@ -1,8 +1,6 @@
 body {
     background: #F1F1F1;
     color: #555555;
-    /*font-family: 'Lato', sans-serif;*/
-    /*font-family: 'Noto Sans', sans-serif;*/
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -18,12 +16,14 @@ hr {
     width: 100%;
 }
 
-a:link, a:visited{
+a:link,
+a:visited {
     text-decoration: none;
     color: #1C93EA
 }
 
-a:hover, a:active{
+a:hover,
+a:active {
     color: #1d5a81;
 }
 
@@ -63,26 +63,23 @@ a:hover, a:active{
     display: flex;
 }
 
-
 .holder {
     width: 50%;
     display: inline-block;
     position: relative;
 }
 
-
 @media screen and (max-width: 991px) {
-    .holder{
+    .holder {
         width: 60%;
     }
 }
 
 @media screen and (max-width: 350px) {
-    .holder{
+    .holder {
         width: 50%;
     }
 }
-
 
 .dropdown {
     position: absolute;
@@ -96,15 +93,14 @@ a:hover, a:active{
     font-size: 85%;
 }
 
-.dropdown li{
+.dropdown li {
     padding-left: 5px;
     cursor: default;
 }
 
-.dropdown li:hover{
+.dropdown li:hover {
     background-color: #eee;
 }
-
 
 /* ----------------------------- */
 
@@ -126,7 +122,6 @@ a:hover, a:active{
     list-style: none;
     height: 260px;
     font-weight: 300;
-    
 }
 
 .video-title {
@@ -136,7 +131,7 @@ a:hover, a:active{
     margin-bottom: 2px;
 }
 
-@media screen and ( max-width: 468px ){
+@media screen and ( max-width: 468px) {
     .video-title {
         font-size: 75%;
     }
@@ -151,11 +146,14 @@ a:hover, a:active{
     font-family: 'Roboto';
 }
 
-@media screen and ( max-width: 468px){
-    .channel-infos {margin-bottom: 5px}
+@media screen and ( max-width: 468px) {
+    .channel-infos {
+        margin-bottom: 5px
+    }
 }
 
-.videos-desc,.titles-media-div {
+.videos-desc,
+.titles-media-div {
     word-wrap: break-word;
     background-color: #fff;
     border-radius: 4px;
@@ -163,7 +161,7 @@ a:hover, a:active{
     margin-top: 10px;
 }
 
-@media screen and ( max-width: 321px){
+@media screen and ( max-width: 321px) {
     .videos-desc {
         font-size: 90%;
     }
@@ -181,7 +179,7 @@ a:hover, a:active{
     padding-bottom: 5px;
 }
 
-@media screen and (max-width: 468px){
+@media screen and (max-width: 468px) {
     .share-bar {
         font-size: 70%;
     }
@@ -197,7 +195,7 @@ a:hover, a:active{
     font-weight: 400;
 }
 
-.subs-count .subs-right{
+.subs-count .subs-right {
     color: #000;
     background-color: #eee;
 }
@@ -210,7 +208,7 @@ a:hover, a:active{
     background-color: #bdc3c7;
 }
 
-@media screen and ( max-width: 468px ){
+@media screen and ( max-width: 468px) {
     .likes-dislikes {
         font-size: 70%;
     }
@@ -242,17 +240,17 @@ a:hover, a:active{
     cursor: default;
 }
 
-.likes-counter i{
+.likes-counter i {
     vertical-align: middle;
     margin-right: 5px;
     font-size: 160%;
 }
 
-.likes-counter i:hover{
+.likes-counter i:hover {
     color: #696a6b;
 }
 
-.likes-counter span:first-of-type{
+.likes-counter span:first-of-type {
     margin-right: 10px
 }
 
@@ -270,18 +268,19 @@ a:hover, a:active{
     vertical-align: baseline
 }
 
-.share-div i{
+.share-div i {
     vertical-align: middle;
     margin-right: 5px;
     font-size: 160%;
     cursor: pointer;
 }
 
-.share-div i:hover, .share-div span:hover{
+.share-div i:hover,
+.share-div span:hover {
     color: #696a6b;
 }
 
-.share-div span{
+.share-div span {
     margin-right: 10px
 }
 
@@ -305,7 +304,7 @@ a:hover, a:active{
     padding: 6px;
 }
 
-.toggle-desc span{
+.toggle-desc span {
     color: #727373;
     font-size: 85%;
     cursor: pointer;
@@ -319,9 +318,13 @@ a:hover, a:active{
     margin-bottom: 20px;
 }
 
+
 /*----------------------------*/
+
+
 /*---------SIDE-LIST----------/*
 /*----------------------------*/
+
 .side-list {
     background-color: #fff;
     border-radius: 2px;
@@ -335,7 +338,7 @@ a:hover, a:active{
     }
 }
 
-.list-videos-ul{
+.list-videos-ul {
     font-family: 'Roboto';
     padding-left: 0;
     padding-top: 10px;
@@ -345,21 +348,24 @@ a:hover, a:active{
     white-space: pre-wrap;
 }
 
-.list-videos-ul img{
+.list-videos-ul img {
     width: 160px;
 }
 
-.list-videos-ul a:link,.list-videos-ul a:visited{
+.list-videos-ul a:link,
+.list-videos-ul a:visited {
     color: #111;
 }
 
-.list-videos-ul a:hover,.list-videos-ul a:active{
+.list-videos-ul a:hover,
+.list-videos-ul a:active {
     color: #3393d1;
 }
 
 .list-videos-ul .media {
     margin-bottom: 15px;
 }
+
 
 /*----------------------------*/
 
@@ -369,7 +375,7 @@ a:hover, a:active{
     line-height: 100%;
 }
 
-@media screen and ( max-width: 468px ) {
+@media screen and ( max-width: 468px) {
     .sub-btn-label {
         font-size: 50%;
     }
@@ -397,7 +403,7 @@ a:hover, a:active{
     border: 1px solid #CC181E;
 }
 
-.subscribe-label{
+.subscribe-label {
     border: 1px solid #ccc;
     border-radius: 2px;
     cursor: text;
@@ -426,10 +432,10 @@ a:hover, a:active{
 }
 
 .comments-header span:last-of-type {
-    font-weight:  normal;
+    font-weight: normal;
 }
 
-.comments-text-area{
+.comments-text-area {
     resize: none;
     width: 100%;
     height: 48px;
@@ -454,11 +460,11 @@ a:hover, a:active{
     white-space: pre-wrap;
 }
 
-.user-comments-comments .img img{
+.user-comments-comments .img img {
     width: 48px;
 }
 
-@media screen and ( max-width: 321px){
+@media screen and ( max-width: 321px) {
     .user-comments-comments {
         font-size: 95%;
     }
@@ -514,14 +520,12 @@ a:hover, a:active{
     padding-left: 0;
 }
 
-@media screen and ( max-width: 768px ){
+@media screen and ( max-width: 768px) {
     .search-results {
         font-size: 70%;
         width: 90%;
     }
-    .search-results .col-xs-12 {
-        margin-top: 15px;
+    .search-results img {
+        margin-bottom: 10px;
     }
 }
-
-/* color #E62117 hover #CC181E #FAFAFA */
