@@ -514,7 +514,7 @@ a:hover, a:active{
     padding-left: 0;
 }
 
-@media screen and ( max-width: 321px ){
+@media screen and ( max-width: 768px ){
     .search-results {
         font-size: 70%;
         width: 90%;
