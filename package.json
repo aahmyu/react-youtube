@@ -1,0 +1,44 @@
+{
+  "name": "react-youtube",
+  "version": "0.1.0",
+  "description": "A small project to practice react and bootstrap",
+  "main": "index.js",
+  "repository": "git@github.com:aahmyu/react-youtube.git",
+  "scripts": {
+    "start": "webpack-dev-server -d --hot --config webpack.config.js --no-inline --host 0.0.0.0 --public 192.168.1.99:8080",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch"
+  },
+  "author": "aahmyu@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "jquery": "^2.2.1",
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-preset-stage-1": "^6.1.18",
+    "jsonp": "^0.2.1",
+    "lodash": "^4.17.4",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-linkify": "^0.2.1",
+    "react-redux": "4.3.0",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.0.4",
+    "redux-form": "^6.8.0",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0"
+  }
+}

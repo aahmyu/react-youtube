@@ -1,0 +1,527 @@
+body {
+    background: #F1F1F1;
+    color: #555555;
+    /*font-family: 'Lato', sans-serif;*/
+    /*font-family: 'Noto Sans', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    padding-top: 70px;
+}
+
+hr {
+    margin: 0;
+}
+
+.mainBody {
+    width: 100%;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: #1C93EA
+}
+
+a:hover, a:active{
+    color: #1d5a81;
+}
+
+/* ----------------------------- */
+/* ------------NAVBAR----------- */
+/* ----------------------------- */
+
+.navbar-default {
+    background-color: #fff;
+}
+
+/* ------------SearchBar----------- */
+
+.navbar-header {
+    width: 100%;
+}
+
+.navbar-form .form-control {
+    border-radius: 0;
+}
+
+.navbar-form {
+    border: none;
+    padding: 0;
+}
+
+.navbar-form button {
+    border-radius: 0;
+    border-left: 0;
+}
+
+.input-group {
+    width: 90%;
+}
+
+.input-group span {
+    display: flex;
+}
+
+
+.holder {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+
+@media screen and (max-width: 991px) {
+    .holder{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .holder{
+        width: 50%;
+    }
+}
+
+
+.dropdown {
+    position: absolute;
+    border: 1px solid #ccc;
+    width: 90%;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    line-height: 25px;
+    font-weight: 700;
+    font-size: 85%;
+}
+
+.dropdown li{
+    padding-left: 5px;
+    cursor: default;
+}
+
+.dropdown li:hover{
+    background-color: #eee;
+}
+
+
+/* ----------------------------- */
+
+.video-thumbs img {
+    max-width: 95%;
+    height: 190px;
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.video-thumbs img:hover {
+    transform: scale(1.03);
+    transition: transform 0.5s;
+}
+
+.video-thumbs {
+    font-size: 70%;
+    margin-top: 10px;
+    list-style: none;
+    height: 260px;
+    font-weight: 300;
+    
+}
+
+.video-title {
+    font-size: 90%;
+    font-weight: 400;
+    color: #111;
+    margin-bottom: 2px;
+}
+
+@media screen and ( max-width: 468px ){
+    .video-title {
+        font-size: 75%;
+    }
+}
+
+.channel-infos img {
+    width: 48px;
+}
+
+.channel-infos {
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+}
+
+@media screen and ( max-width: 468px){
+    .channel-infos {margin-bottom: 5px}
+}
+
+.videos-desc,.titles-media-div {
+    word-wrap: break-word;
+    background-color: #fff;
+    border-radius: 4px;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+@media screen and ( max-width: 321px){
+    .videos-desc {
+        font-size: 90%;
+    }
+}
+
+.channel-infos .media-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 65%;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.share-bar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 468px){
+    .share-bar {
+        font-size: 70%;
+    }
+}
+
+.subs-count span {
+    padding: 3px;
+    background-color: #cc181e;
+    color: #fff;
+    font-size: 80%;
+    border-radius: 2px;
+    cursor: default;
+    font-weight: 400;
+}
+
+.subs-count .subs-right{
+    color: #000;
+    background-color: #eee;
+}
+
+.likes-bar {
+    /*margin-top: 2px;*/
+    margin-bottom: 0;
+    height: 2px;
+    width: 80%;
+    background-color: #bdc3c7;
+}
+
+@media screen and ( max-width: 468px ){
+    .likes-dislikes {
+        font-size: 70%;
+    }
+}
+
+.views-count {
+    text-align: right;
+    font-size: 90%;
+    color: #555555;
+    font-weight: 400;
+}
+
+.views-count .view-word {
+    font-size: 86%;
+}
+
+.likes-counter {
+    text-align: right;
+    color: #7a7b7c;
+    font-size: 70%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 300;
+}
+
+.likes-counter span {
+    font-size: 90%;
+    color: #717274;
+    cursor: default;
+}
+
+.likes-counter i{
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 160%;
+}
+
+.likes-counter i:hover{
+    color: #696a6b;
+}
+
+.likes-counter span:first-of-type{
+    margin-right: 10px
+}
+
+.share-div {
+    color: #7a7b7c;
+    font-size: 70%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 300;
+}
+
+.share-div span {
+    font-size: 90%;
+    cursor: pointer;
+    vertical-align: baseline
+}
+
+.share-div i{
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 160%;
+    cursor: pointer;
+}
+
+.share-div i:hover, .share-div span:hover{
+    color: #696a6b;
+}
+
+.share-div span{
+    margin-right: 10px
+}
+
+.publish-date {
+    font-size: 65%;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.video-description {
+    color: #333;
+    font-size: 65%;
+    font-weight: 400;
+    white-space: pre-line;
+    line-height: 14px;
+}
+
+.toggle-desc {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 6px;
+}
+
+.toggle-desc span{
+    color: #727373;
+    font-size: 85%;
+    cursor: pointer;
+}
+
+.toggle-desc span:hover {
+    color: #151515;
+}
+
+.desc-body {
+    margin-bottom: 20px;
+}
+
+/*----------------------------*/
+/*---------SIDE-LIST----------/*
+/*----------------------------*/
+.side-list {
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 991px) {
+    .side-list {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+
+.list-videos-ul{
+    font-family: 'Roboto';
+    padding-left: 0;
+    padding-top: 10px;
+    font-size: 65%;
+    font-weight: 500;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.list-videos-ul img{
+    width: 160px;
+}
+
+.list-videos-ul a:link,.list-videos-ul a:visited{
+    color: #111;
+}
+
+.list-videos-ul a:hover,.list-videos-ul a:active{
+    color: #3393d1;
+}
+
+.list-videos-ul .media {
+    margin-bottom: 15px;
+}
+
+/*----------------------------*/
+
+.sub-btn-label {
+    display: flex;
+    font-size: 60%;
+    line-height: 100%;
+}
+
+@media screen and ( max-width: 468px ) {
+    .sub-btn-label {
+        font-size: 50%;
+    }
+}
+
+.subscribe-btn {
+    background-color: #E62117;
+    border: 1px solid #E62117;
+    color: #fff;
+    border-radius: 2px;
+    vertical-align: bottom;
+}
+
+.subscribe-btn i {
+    font-size: 150%;
+    vertical-align: middle;
+}
+
+.subscribe-btn span {
+    vertical-align: middle;
+}
+
+.subscribe-btn:hover {
+    background-color: #CC181E;
+    border: 1px solid #CC181E;
+}
+
+.subscribe-label{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: text;
+    background-color: #FAFAFA;
+    color: #7f7f7f;
+    vertical-align: bottom;
+}
+
+
+/*----------------------------*/
+/*---------COMMENTS----------/*
+/*----------------------------*/
+
+.comments-section {
+    font-family: 'Roboto';
+    background-color: #fff;
+    border-radius: 4px;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+.comments-header {
+    font-size: 60%;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.comments-header span:last-of-type {
+    font-weight:  normal;
+}
+
+.comments-text-area{
+    resize: none;
+    width: 100%;
+    height: 48px;
+    font-size: 60%;
+    font-weight: normal;
+    color: #5d5d5d;
+    padding: 8px;
+}
+
+.comments-section hr {
+    margin: 12px 0;
+}
+
+.users-comments-section {
+    font-weight: normal;
+    font-size: 70%;
+}
+
+.user-comments-comments {
+    margin-top: 15px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.user-comments-comments .img img{
+    width: 48px;
+}
+
+@media screen and ( max-width: 321px){
+    .user-comments-comments {
+        font-size: 95%;
+    }
+}
+
+.user-comments-comments .media-body {
+    font-size: 90%;
+    color: #333;
+}
+
+.user-comments-comments .media-body a:link,
+.user-comments-comments .media-body a:visited {
+    font-weight: 500;
+}
+
+.user-comments-comments .media-body a:active,
+.user-comments-comments .media-body a:hover {
+    color: #1C93EA;
+    text-decoration: underline;
+}
+
+.showMoreLess {
+    color: #1C93EA;
+    cursor: pointer;
+}
+
+.showMoreLess:hover {
+    text-decoration: underline;
+}
+
+
+/* SEARCH RESULTS */
+
+.search-results {
+    border-radius: 4px;
+    width: 40%;
+    background-color: #fff;
+    padding: 15px;
+    word-wrap: break-word;
+    white-space: pre-line;
+    margin-bottom: 15px;
+}
+
+.search-results .row {
+    padding-bottom: 15px;
+}
+
+.search-results p {
+    font-size: 80%;
+}
+
+.search-results .col-md-6 {
+    padding-left: 0;
+}
+
+@media screen and ( max-width: 321px ){
+    .search-results {
+        font-size: 70%;
+        width: 90%;
+    }
+    .search-results .col-xs-12 {
+        margin-top: 15px;
+    }
+}
+
+/* color #E62117 hover #CC181E #FAFAFA */
