@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
-import NavBar from '../components/nav-bar';
 import { getVideoChannel } from '../actions/index';
 import VideosChannelInfo from './videos-channel-info';
 import VideoDescription from './videos-desc';
@@ -29,26 +27,20 @@ class VideosDetails extends Component {
     }
 
     render() {
-        if (!this.props.video) {
-            return <div>Loading...</div>
-        }
-        if (!this.props.currentChannel) {
-            return <div>Loading...</div>
-        }
+        if (!this.props.video) { return <div>Loading...</div> }
 
-        if (!this.props.video.statistics) {
-            return <div>Loading...</div>
-        }
+        if (!this.props.currentChannel) { return <div>Loading...</div> }
+
+        if (!this.props.video.statistics) { return <div>Loading...</div> }
 
         return (
             <div>
-                <NavBar history={this.props.history} />
                 <div className='container'>
                     <div className='row'>
                         <div className='videos-details col-md-8'>
                             <div className='video-frame'>
                                 <div className="embed-responsive embed-responsive-16by9">
-                                    <iframe className="embed-responsive-item" src={`https://www.youtube.com/embed/${this.props.video.id}?autoplay=1`} frameBorder='0' allowFullScreen></iframe>
+                                    <iframe className="embed-responsive-item" src={`https://www.youtube.com/embed/${this.props.video.id}?autoplay=1&showinfo=0&modestbranding=1`} frameBorder='0' allowFullScreen></iframe>
                                 </div>
                             </div>
                             <VideosChannelInfo
@@ -59,14 +51,13 @@ class VideosDetails extends Component {
                             <VideoDescription video={this.props.video} />
                             <CommentsSection comments={this.props.comments} video={this.props.video} />
                         </div>
-                        
+
                         <div className='side-list col-md-4'>
                             <RelatedVideosPanel />
                         </div>
                     </div>
                 </div>
             </div>
-
         )
     }
 }

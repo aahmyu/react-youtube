@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import SearchBar from './search-bar';
 
-class NavBar extends Component {
+class Header extends Component {
     render(){
         return (
             <nav className='navbar navbar-default navbar-fixed-top'>
@@ -19,4 +19,4 @@ class NavBar extends Component {
     }
 }
 
-export default NavBar;
+export default Header;

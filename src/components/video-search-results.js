@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { searchVideos } from '../actions/index';
-import NavBar from './nav-bar';
 import _ from 'lodash';
 import { Link } from 'react-router-dom';
 
@@ -36,7 +35,6 @@ class SearchResults extends Component {
         // if(!this.props.videos) return <div>Loading...</div>;
         return (
             <div>
-                <NavBar />
                 <div className='search-results container'>
                     { _.map(this.props.videos, this.renderResults ) }
                 </div>

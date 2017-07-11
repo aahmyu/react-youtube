@@ -19,7 +19,7 @@ class OutsideAlerter extends Component {
     componentDidMount() {
         document.addEventListener('mousedown', this.handleClickOutside);
     }
-    // remember to remove all events to avoid memory leaks
+    // remove all events to avoid memory leaks
     componentWillUnmount() {
         document.removeEventListener('mousedown', this.handleClickOutside);
     }

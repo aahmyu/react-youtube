@@ -8,12 +8,6 @@ import OutsideAlerter from './watch-click-outside';
 
 class SuggestionBox extends Component {
 
-    static propTypes = {
-        match: PropTypes.object.isRequired,
-        location: PropTypes.object.isRequired,
-        history: PropTypes.object.isRequired
-    }
-
     renderSuggestions(item,i){
         return (
             <li onClick={ this.onClick.bind(this) } key={`${item}-${i}`}>
@@ -24,6 +18,7 @@ class SuggestionBox extends Component {
 
     onClick(e){
         this.props.searchVideos(e.target.textContent);
+        this.props.field.input.value = '';
         this.props.history.push(`/search/${e.target.textContent}`);
         this.props.resetSuggesions();  // empty suggestions array to remove the suggestions
     }

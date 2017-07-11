@@ -9,12 +9,6 @@ import SuggestionBox from './suggestion-box';
 
 class SearchBar extends Component {
 
-    static propTypes = {
-        match: PropTypes.object.isRequired,
-        location: PropTypes.object.isRequired,
-        history: PropTypes.object.isRequired
-    }
-
     renderFields(field) {
         return (
             <div className='holder'>
